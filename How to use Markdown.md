@@ -72,9 +72,9 @@ Si conectas varios *>>* puedes hacer **citas anidadas**.
 > Aquí termina la cita normal
 
 ## Listas
-----------------------------------------------------------------
 
-## Listas desordenadas
+
+### Listas desordenadas
 
 Para crear una lista desordenada se puede utilizar * *asteriscos*, - *guiones* o + *símbolo de suma*
 
@@ -89,7 +89,7 @@ Para hacer una **lista anidada** solo debes poner cuatro espacios en blanco ante
 - Primer elemento
     - Primer subelemento
 
-## Listas ordenadas
+### Listas ordenadas
 
 Para crear una lista ordenada debes utilizar la sintaxis de tipo *número* 1. (al igual que con las listas desordenadas, tambien podras **anidarlas o combinarlas**)
 
@@ -124,3 +124,108 @@ ___
 ----------------------------------------------------------------
 
 ## Énfasis (negritas y cursivas)
+
+En Markdown se utiliza **asteriscos** o **guiones bajos** para enfatizar.
+
+Simplimente se envuelve la palabra o en el texto con éstos símbolos para conseguir *cursivas* o **negritas**
+
+- *cursiva*
+- _cursiva_
+- **negrita**
+- __negrita__
+
+**nota:** Si queremos usar los dos tipos de énfasis solo tenemos que combinar la sintaxis.  
+***negrita y cursiva***  
+___negrita y cursiva___
+
+## Links o enlaces
+
+### Links o enlaces en línea
+
+Como su nombre lo indica, se encuentra en línea con el texto.
+Se crean esribiendo la palabra o texto enlazada entre _[ ]_ **corchetes**, y el link en cuestión entre _( )_ **paréntesis**
+
+[Projecto git_prueba](https://github.com/Paola-Sbert/git_prueba)
+
+### Links o enlaces como referencia
+
+Para tener un texto mas limplio y ordenado podemos usar los enlaces por referencia.
+
+Esto quiere decir que en tu texto enlazarás **palabras o códigos concretos** (formados por letras y/o números), que en otro lugar más apartado de tu documento tendrás definidos como determinadas URL.
+
+[Nombre que quieres darle a tu enlace][nombre de tu referencia]
+
+## Código
+
+A veces necesitaras añadir pequeñas secciones donde mostrar código de otro lenguaje, atajos de teclado, o demás contenido que no debería ser tratado como tal.
+
+Para ello se tiene dos alternativas
+
+**Código puro** 
+
+La fórma más sencilla de escribir código en Markdown es envolver el texto entre dos comillas sencillas `.
+
+`` Esto es una línea de código ``
+
+
+**Texto preformateado**
+
+La otra manera de añadir código en Markdown es comenzar un párrafo con cuatro espacios en blanco.
+
+    Esto es una línea de código
+
+**nota:** estos espacios deberan ser incluidos en cada línea que escribas.
+
+## Imágenes
+
+Insertar una imágen con Markdown es muy similar a insertar links, solo que en este caso se debe añadir el símbolo *!* **exclamación** al principio y el enlace sera la ubicación de la imagen.
+
+![Texto alternativo][imágen referencia]
+
+**nota:** El texto alternativo es lo que se mostraría si la carga dela imagen fallase.  
+Si agregas un texto alternativo entrecomilládo al final de la ruta, esté sera el titulo mostrado al dejar el cursor sobre la imágen.
+
+## Elementos varios
+-----------------------------------------------------------------
+
+## Links automáticos
+
+Se utilizan cuando se quiere **mostrar una URL completa**.
+
+Para generar links automáticos solo debes rodear el link con los símbolos *<>*
+
+<https://github.com/Paola-Sbert/git_prueba>
+
+## Omitir Markdown
+
+Para poder escribir los símbolos *, -, _ sin que Markdown los procese como cursiva, negrita lista, etc. podemos utilizar el síbolo */*.  
+ Escribiendola delante de cualquiera de los elementos anteriormente mensionados los mismos no tendran efecto a la hora de procesarse  
+
+
+\`  acento invertido
+
+\*  asterisco
+
+\_  guión bajo
+
+\{} llaves
+
+\[] corchetes
+
+\() paréntesis
+
+\#  almohadilla
+
+\+  símbolo de suma
+
+\-  guión
+
+\.  punto
+
+\!  exclamación
+
+
+
+[nombre de tu referencia]:https://github.com/Paola-Sbert/git_prueba
+
+[imágen referencia]:https://i.pinimg.com/280x280_RS/dd/ac/cd/ddaccd9bf85a7ddcdea491beefadf922.jpg "titulo de la imagen"
